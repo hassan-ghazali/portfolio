@@ -1,0 +1,8 @@
+# Vercel — static site, no build step.
+# index.html sits at the repo root, so Vercel serves it directly.
+# Nothing to install, nothing to compile.
+
+# Keep helper/working files out of the deployed bundle.
+.workbuddy-ai/
+deploy-vercel.bat
+*.log

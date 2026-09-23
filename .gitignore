@@ -1,0 +1,7 @@
+# Vercel writes its project link here. It is machine specific, not source.
+.vercel
+
+# Tooling, working files, and agent memory. Never published, never committed.
+.workbuddy-ai/
+
+*.log

@@ -1,0 +1,4 @@
+# Store every file byte for byte. The site is deployed straight from this
+# working tree and the live files are byte verified against it, so git must not
+# rewrite line endings on commit or checkout.
+* -text
