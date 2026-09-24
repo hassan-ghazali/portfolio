@@ -551,7 +551,7 @@
   .shot .zoom svg{width:12px;height:12px}
   .shot:hover .zoom{opacity:1;transform:scale(1.1)}
 
-  /* ---- case evidence: the audited charts + the full report ----
+  /* ---- case evidence: the campaign charts + the full report ----
      This block sits in the Xanderia case, which is a CREAM section, not the
      dark .featured panel the SWR gallery lives in. So every surface here is
      light: a white frame per chart, ink text, and --red-dark (5.07:1 on cream)
@@ -1434,7 +1434,7 @@
         View Case Studies
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
-      <a class="hero-btn ghost" href="assets/Muhd-Hassan-Resume.pdf?v=20260920c" download="Muhd-Hassan-Resume.pdf">
+      <a class="hero-btn ghost" href="assets/Muhd-Hassan-Resume.pdf?v=20260924a" download="Muhd-Hassan-Resume.pdf">
         Download Resume
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
       </a>
@@ -1585,7 +1585,7 @@
 
     <p class="cases-intro rv">
       Three projects. <strong>SWR eFinance</strong> is the deepest. <strong>Xanderia</strong> includes a full
-      audit of the client's own disbursement records, published with the data cleaned. <strong>Yayasan
+      analysis of the client's own disbursement records, published with the data cleaned. <strong>Yayasan
       Ar-Riayyah</strong> is a shorter content project.
     </p>
 
@@ -1677,7 +1677,7 @@
               <ul>
                 <li>Live disbursement and commission dashboard</li>
                 <li>Queue that flags what needs attention today</li>
-                <li>Document checklist, offer calculator, full audit trail</li>
+                <li>Document checklist, offer calculator, full activity history</li>
               </ul>
               <a class="visit" href="https://agentcentral-hub.lovable.app" target="_blank" rel="noopener">Open agent portal &rarr;</a>
             </div>
@@ -1808,7 +1808,7 @@
 
       <p class="case-sum">
         Paid social lead generation for personal financing products on Meta and TikTok over three months. I also
-        audited the client's own disbursement workbook and rebuilt the monthly figures the team was reporting.
+        reviewed the client's own disbursement records and rebuilt the monthly figures the team was reporting.
       </p>
 
       <div class="case-facts">
@@ -1865,25 +1865,14 @@
                 marketing generates the applications and the lender decides what pays out.</p>
               </div>
             </div>
-
-            <div class="cb">
-              <span class="cb-k">The Audit</span>
-              <div class="cb-v">
-                <p>Rather than trust the workbook's own totals, I tested them against the raw rows behind them.
-                Combining three inconsistently structured monthly sheets into one 272 row dataset surfaced two
-                errors: a December total that silently skipped its last 41 rows and understated the month by
-                <strong>RM767,100</strong>, and a status field that counted money applied for as money paid out.</p>
-                <p>Every figure here is computed from the client's own records. Nothing is estimated, and customer
-                names, IC numbers and phone numbers were removed before publishing.</p>
-              </div>
-            </div>
           </div>
 
-          <!-- the audited charts, straight from the analysis -->
+          <!-- the charts, straight from the campaign data -->
           <div class="evidence">
-            <span class="flabel">From the audit</span>
-            <p class="ev-note">Five charts from the analysis, each computed from the client's own workbook. Click
-            any chart to enlarge it.</p>
+            <span class="flabel">From the campaign data</span>
+            <p class="ev-note">Five charts from the campaign analysis, each computed from the client's own records.
+            Nothing is estimated, and customer names, IC numbers and phone numbers were removed before publishing.
+            Click any chart to enlarge it.</p>
             <div class="shots-strip ev-strip rv-stagger">
               <button type="button" class="shot wide" data-shot="shotX1" aria-label="Enlarge: applications and outcome by month">
                 <img src="assets/xanderia/01-applications-by-month.png" alt="Bar chart of applications per month split by outcome: October 49, November 68 and December 155, with the paid-out share staying flat as volume rose" loading="lazy" decoding="async">
@@ -2250,14 +2239,14 @@
   </div>
 </div>
 
-<!-- XANDERIA AUDIT CHARTS (wide, so they get a wider lightbox) -->
+<!-- XANDERIA CAMPAIGN CHARTS (wide, so they get a wider lightbox) -->
 <div class="certbox wide" id="shotX1" role="dialog" aria-modal="true" aria-label="Applications and outcome by month, enlarged">
   <div class="certbox-inner">
     <button type="button" class="certbox-x" onclick="closeCert('shotX1')" aria-label="Close">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <p class="certbox-t">Applications Tripled. Conversion Did Not.</p>
-    <p class="certbox-s">Xanderia Q4 2025 &middot; From the audit</p>
+    <p class="certbox-s">Xanderia Q4 2025 &middot; From the campaign data</p>
     <img src="assets/xanderia/01-applications-by-month.png" alt="Applications received each month split by outcome: October 49 with 31 paid out, November 68 with 33 paid out, December 155 with 78 paid out" loading="lazy" />
   </div>
 </div>
@@ -2268,7 +2257,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <p class="certbox-t">Half of What Was Applied For</p>
-    <p class="certbox-s">Xanderia Q4 2025 &middot; From the audit</p>
+    <p class="certbox-s">Xanderia Q4 2025 &middot; From the campaign data</p>
     <img src="assets/xanderia/02-pipeline-outcome.png" alt="Stacked bar splitting RM5,511,000 applied for into RM2,836,900 disbursed, RM2,584,100 rejected or cancelled and RM90,000 pending" loading="lazy" />
   </div>
 </div>
@@ -2279,7 +2268,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <p class="certbox-t">Geography Decides Conversion</p>
-    <p class="certbox-s">Xanderia Q4 2025 &middot; From the audit</p>
+    <p class="certbox-s">Xanderia Q4 2025 &middot; From the campaign data</p>
     <img src="assets/xanderia/03-conversion-by-state.png" alt="Top eight states by disbursed value with conversion rates: Perak RM466,600 at 36.4 percent down to Kedah RM155,100 at 38.5 percent, with W.P. Putrajaya highest at 77.8 percent" loading="lazy" />
   </div>
 </div>
@@ -2290,7 +2279,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <p class="certbox-t">The Biggest Losses Go To Competitors</p>
-    <p class="certbox-s">Xanderia Q4 2025 &middot; From the audit</p>
+    <p class="certbox-s">Xanderia Q4 2025 &middot; From the campaign data</p>
     <img src="assets/xanderia/04-loss-reasons.png" alt="The five largest reasons for rejected or cancelled value: competing agency RM594,900 across 4 cases, DSR burst RM496,400 across 45 cases, other reasons, resubmission and no response" loading="lazy" />
   </div>
 </div>
@@ -2301,7 +2290,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <p class="certbox-t">RM1 Returned RM54.95</p>
-    <p class="certbox-s">Xanderia Q4 2025 &middot; From the audit</p>
+    <p class="certbox-s">Xanderia Q4 2025 &middot; From the campaign data</p>
     <img src="assets/xanderia/05-media-efficiency.png" alt="Bar comparing RM2,836,900 of disbursed loans against RM51,627.15 of paid media spend, described as RM363.57 per loan paid out and 1.8 percent of disbursed value" loading="lazy" />
   </div>
 </div>
@@ -2326,7 +2315,7 @@
       <a class="clink" href="https://www.linkedin.com/in/hassan-ghazali-336197353/" target="_blank" rel="noopener">
         <span class="lab">LinkedIn</span><span class="val">View my profile &rarr;</span>
       </a>
-      <a class="clink" href="assets/Muhd-Hassan-Resume.pdf?v=20260920c" download="Muhd-Hassan-Resume.pdf">
+      <a class="clink" href="assets/Muhd-Hassan-Resume.pdf?v=20260924a" download="Muhd-Hassan-Resume.pdf">
         <span class="lab">Resume</span><span class="val">Download PDF &darr;</span>
       </a>
     </div>
