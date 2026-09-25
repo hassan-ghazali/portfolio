@@ -63,6 +63,14 @@
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
+          "name": "Google Ads Search Certification",
+          "credentialCategory": "certification",
+          "recognizedBy": { "@type": "Organization", "name": "Google" },
+          "validFrom": "2026-09-25",
+          "validUntil": "2027-09-25"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
           "name": "Data Science Analyst",
           "credentialCategory": "certification",
           "recognizedBy": { "@type": "Organization", "name": "PeopleCert" },
@@ -781,7 +789,7 @@
   .edu-detail .dv{font-size:15px;color:var(--ink);font-weight:500}
 
   /* ================= CREDENTIALS ================= */
-  .cred-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
   
   .cred{display:flex;gap:20px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--cream-2);transition:transform .45s var(--ease),border-color .35s,box-shadow .45s var(--ease)}
   .cred:hover{transform:translateY(-5px);border-color:var(--red);box-shadow:0 24px 40px -30px rgba(18,33,46,.6)}
@@ -791,7 +799,10 @@
 
   /* ---- clickable certificate cards ---- */
   button.cred{cursor:pointer;font:inherit;color:inherit;text-align:left;position:relative;width:100%}
-  button.cred .cred-body{display:block;flex:1 1 auto;min-width:0}
+  /* padding-right reserves the absolutely positioned .cred-zoom corner. Without
+     it the last line of a description runs underneath the icon, which showed up
+     as soon as the grid went to three columns and the cards got narrower. */
+  button.cred .cred-body{display:block;flex:1 1 auto;min-width:0;padding-right:22px}
   button.cred h3{font-family:'Space Grotesk',sans-serif}
   button.cred:focus-visible{outline:2px solid var(--red);outline-offset:3px}
   .cred-zoom{
@@ -1434,7 +1445,7 @@
         View Case Studies
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
-      <a class="hero-btn ghost" href="assets/Muhd-Hassan-Resume.pdf?v=20260924b" download="Muhd-Hassan-Resume.pdf">
+      <a class="hero-btn ghost" href="assets/Muhd-Hassan-Resume.pdf?v=20260925a" download="Muhd-Hassan-Resume.pdf">
         Download Resume
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
       </a>
@@ -1474,7 +1485,7 @@
       <div class="about-body rv">
         <p>I'm a digital marketing specialist with <strong>2 years</strong> of experience in paid social, lead generation and customer acquisition. Most of my work has been across <strong>Meta and TikTok Ads</strong>, where I handle campaigns from audience planning and creative direction to budget management and optimisation.</p>
         <p>What I care about is what happens after the click. I've worked closely with sales and operations, handled leads myself and followed the journey through to conversion. That helps me understand whether a problem comes from the campaign, the message, the customer journey or the follow-up process.</p>
-        <p>I hold the <strong>PeopleCert Data Science Foundation and Analyst</strong> certifications, and I'm building on them to bring stronger measurement into my marketing work.</p>
+        <p>I'm certified in <strong>Google Ads Search</strong> and hold both <strong>PeopleCert Data Science</strong> certifications, and I'm building on them to bring stronger measurement into my marketing work.</p>
       </div>
     </div>
   </div>
@@ -2103,11 +2114,21 @@
       <span class="num">06 / 06</span>
     </div>
     <div class="cred-grid rv-stagger">
-      <button type="button" class="cred cert-open" data-cert="certAnalyst" aria-label="View the Data Science Analyst certificate">
+      <button type="button" class="cred cert-open" data-cert="certGoogleAds" aria-label="View the Google Ads Search Certification">
+        <span class="score">2026</span>
+        <span class="cred-body">
+          <h3>Google Ads Search Certification</h3>
+          <p>Google Skillshop. Search strategy and budget planning.</p>
+        </span>
+        <span class="cred-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+        </span>
+      </button>
+      <button type="button" class="cred cert-open rv" data-cert="certAnalyst" aria-label="View the Data Science Analyst certificate">
         <span class="score">2026</span>
         <span class="cred-body">
           <h3>PeopleCert Data Science Analyst</h3>
-          <p>Passed. Applied analytics, data modelling and business reporting.</p>
+          <p>Passed. Applied analytics, data modelling and reporting.</p>
         </span>
         <span class="cred-zoom" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
@@ -2117,7 +2138,7 @@
         <span class="score">2026</span>
         <span class="cred-body">
           <h3>PeopleCert Data Science Foundation</h3>
-          <p>Passed. Data fundamentals, statistics and analytics concepts.</p>
+          <p>Passed. Data fundamentals, statistics and analytics.</p>
         </span>
         <span class="cred-zoom" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
@@ -2128,6 +2149,17 @@
 </section>
 
 <!-- CERTIFICATE LIGHTBOX -->
+<div class="certbox wide" id="certGoogleAds" role="dialog" aria-modal="true" aria-label="Google Ads Search Certification">
+  <div class="certbox-inner">
+    <button type="button" class="certbox-x" onclick="closeCert('certGoogleAds')" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <p class="certbox-t">Google Ads Search Certification</p>
+    <p class="certbox-s">Issued 25 Sep 2026 &middot; Valid to 25 Sep 2027 &middot; Certificate 195162556</p>
+    <img src="assets/certs/googleads-p1.png" alt="Google Ads Search Certification awarded to Hassan Ghazali, issued 25 September 2026 and valid to 25 September 2027" loading="lazy" />
+  </div>
+</div>
+
 <div class="certbox" id="certAnalyst" role="dialog" aria-modal="true" aria-label="PeopleCert Data Science Analyst certificate">
   <div class="certbox-inner">
     <button type="button" class="certbox-x" onclick="closeCert('certAnalyst')" aria-label="Close">
@@ -2315,7 +2347,7 @@
       <a class="clink" href="https://www.linkedin.com/in/hassan-ghazali-336197353/" target="_blank" rel="noopener">
         <span class="lab">LinkedIn</span><span class="val">View my profile &rarr;</span>
       </a>
-      <a class="clink" href="assets/Muhd-Hassan-Resume.pdf?v=20260924b" download="Muhd-Hassan-Resume.pdf">
+      <a class="clink" href="assets/Muhd-Hassan-Resume.pdf?v=20260925a" download="Muhd-Hassan-Resume.pdf">
         <span class="lab">Resume</span><span class="val">Download PDF &darr;</span>
       </a>
     </div>
