@@ -1000,6 +1000,13 @@
       content:"→";position:static;width:auto;height:auto;background:none;
       font-size:17px;color:var(--red);opacity:.5;transform:none
     }
+    /* The desktop underline rule `nav a:hover::after{width:100%}` out-specifies
+       the arrow rule above, so on phones a hover stretched the arrow from 16px
+       to the full row width and grew the row from 71px to 98px. A phone has no
+       hover, but responsive mode and a sticky hover after a tap both trigger it,
+       so the width is pinned back to the arrow's natural size. */
+    nav ul li a:hover::after,
+    nav ul li a.active::after{width:auto}
     nav ul li a.active{color:var(--red-dark)}
     nav ul li a.active::after{opacity:1}
 
